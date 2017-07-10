@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="a1.a2017.iff.seriesanimes.Activity.Series">
+    tools:context="a1.a2017.iff.seriesanimes.Activity.SeriesActivity">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rv_series"

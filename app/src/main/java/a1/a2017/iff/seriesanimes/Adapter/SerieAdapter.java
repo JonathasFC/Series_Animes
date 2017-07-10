@@ -7,11 +7,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.*;
 
 import java.util.List;
 
-import a1.a2017.iff.seriesanimes.Activity.Series;
 import a1.a2017.iff.seriesanimes.Model.Serie;
 import a1.a2017.iff.seriesanimes.R;
 

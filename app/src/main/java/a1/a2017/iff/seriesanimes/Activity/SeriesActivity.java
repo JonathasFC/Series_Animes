@@ -12,7 +12,7 @@ import a1.a2017.iff.seriesanimes.Adapter.SerieAdapter;
 import a1.a2017.iff.seriesanimes.Model.Serie;
 import a1.a2017.iff.seriesanimes.R;
 
-public class Series extends AppCompatActivity {
+public class SeriesActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,4 +39,3 @@ public class Series extends AppCompatActivity {
 
     }
 }
-//EU PAREI AQUI! tENHO QUE CONFIGURAR ESSA CLASSE AINDA. VER A CLASSE LIVROACTIVITY

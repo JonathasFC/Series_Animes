@@ -11,6 +11,7 @@ import a1.a2017.iff.seriesanimes.R;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     private Button btn_series;
+    private Button btn_user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +19,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         btn_series = (Button) findViewById(R.id.btn_series);
+        btn_user = (Button) findViewById(R.id.btn_user);
     }
 
     @Override
@@ -25,7 +27,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         if (v == btn_series)
         {
-            Intent it = new Intent (this, Series.class);
+            Intent it = new Intent (this, SeriesActivity.class);
+        }
+
+        if(v == btn_user)
+        {
+            Intent it = new Intent (this, UserActivity.class);
         }
     }
 }
