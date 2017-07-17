@@ -19,7 +19,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         btn_series = (Button) findViewById(R.id.btn_series);
+        btn_series.getBackground().setAlpha(100);
         btn_user = (Button) findViewById(R.id.btn_user);
+        btn_user.getBackground().setAlpha(100);
     }
 
     @Override
@@ -28,11 +30,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (v == btn_series)
         {
             Intent it = new Intent (this, SeriesActivity.class);
+            startActivity(it);
         }
 
         if(v == btn_user)
         {
             Intent it = new Intent (this, UserActivity.class);
+            startActivity(it);
         }
     }
 }

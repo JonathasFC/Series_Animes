@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="a1.a2017.iff.seriesanimes.Activity.SerieDestaqueActivity">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <TextView
+            android:id="@+id/tv_titulo_serie_destaque"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Titulo"
+            />
+
+        <EditText
+            android:id="@+id/et_titulo_serie_destaque"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:inputType="none|text"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <TextView
+            android:id="@+id/tv_descricao_serie_destaque"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Descricao"
+            />
+
+        <EditText
+            android:id="@+id/et_descricao_serie_destaque"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <TextView
+            android:id="@+id/tv_ano_lancamento_serie_destaque"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ano de Lançamento"
+            />
+
+        <EditText
+            android:id="@+id/et_ano_lancamento_serie_destaque"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:inputType="textPersonName"
+            android:text="" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <TextView
+            android:id="@+id/tv_tipo_serie_destaque"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tipo da Série"
+            />
+
+        <EditText
+            android:id="@+id/et_tipo_serie_destaque"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:inputType="textPersonName"
+            android:text="" />
+    </LinearLayout>
+</LinearLayout>

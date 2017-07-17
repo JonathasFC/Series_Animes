@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="a1.a2017.iff.seriesanimes.Activity.UserActivity">
+    tools:context="a1.a2017.iff.seriesanimes.Activity.UserActivity"
+    android:background="@drawable/pikachu">
 
     <EditText
         android:id="@+id/et_nome"

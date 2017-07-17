@@ -1,5 +1,6 @@
 package a1.a2017.iff.seriesanimes.Activity;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -13,7 +14,7 @@ import a1.a2017.iff.seriesanimes.Adapter.SerieAdapter;
 import a1.a2017.iff.seriesanimes.Model.Serie;
 import a1.a2017.iff.seriesanimes.R;
 
-public class SeriesActivity extends AppCompatActivity {
+public class SeriesActivity extends AppCompatActivity implements ClickRecyclerViewListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +23,7 @@ public class SeriesActivity extends AppCompatActivity {
 
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.rv_series);
 
-        recyclerView.setAdapter(new SerieAdapter(getSeries(),this, (ClickRecyclerViewListener) this));
+        recyclerView.setAdapter(new SerieAdapter(getSeries(),this,this));
         RecyclerView.LayoutManager layout = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
 
         recyclerView.setLayoutManager(layout);
@@ -38,5 +39,13 @@ public class SeriesActivity extends AppCompatActivity {
         }
         return series;
 
+    }
+
+    @Override
+    public void onClick(Object object) {
+        Intent intentLivro = new Intent(this, SerieDestaqueActivity.class);
+        Serie serie = (Serie) object;
+        intentLivro.putExtra("serie", serie);
+        startActivity(intentLivro);
     }
 }

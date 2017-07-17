@@ -2,41 +2,37 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="@drawable/pikachu"
     android:orientation="vertical">
 
     <TextView
         android:id="@+id/tv_titulo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
         android:text="Titulo" />
 
     <TextView
         android:id="@+id/tv_tipo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
         android:text="Tipo" />
 
     <TextView
         android:id="@+id/tv_ano_lancamento"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
         android:text="Ano de Lancamento" />
 
     <TextView
         android:id="@+id/tv_descricao"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
         android:text="Descrição" />
 
     <Button
         android:id="@+id/btn_elenco"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
         android:text="Elenco da Série" />
 
 </LinearLayout>

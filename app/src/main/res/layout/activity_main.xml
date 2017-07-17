@@ -5,31 +5,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="a1.a2017.iff.seriesanimes.Activity.MainActivity">
+    tools:context="a1.a2017.iff.seriesanimes.Activity.MainActivity"
+    android:background="@drawable/pikachu"
+    android:orientation="vertical">
 
-    <RelativeLayout
+    <Button
+        android:id="@+id/btn_user"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="Usuário" />
 
-        <Button
-            android:id="@+id/btn_series"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Séries"
-            android:layout_marginEnd="55dp"
-            android:layout_alignBaseline="@+id/btn_user"
-            android:layout_alignBottom="@+id/btn_user"
-            android:layout_alignParentEnd="true" />
-
-        <Button
-            android:id="@+id/btn_user"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Usuário"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="55dp"
-            android:layout_marginTop="53dp" />
-    </RelativeLayout>
+    <Button
+        android:id="@+id/btn_series"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="Séries" />
 
 </android.support.v7.widget.LinearLayoutCompat>
