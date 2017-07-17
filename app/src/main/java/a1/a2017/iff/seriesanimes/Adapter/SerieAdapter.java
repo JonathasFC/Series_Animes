@@ -26,7 +26,7 @@ public class SerieAdapter extends RecyclerView.Adapter{
     public SerieAdapter(List<Serie> series, Context context, ClickRecyclerViewListener clickRecyclerViewListener) {
         this.series = series;
         this.context = context;
-        SerieAdapter.clickRecyclerViewListener = clickRecyclerViewListener;
+        this.clickRecyclerViewListener = clickRecyclerViewListener;
     }
 
     @Override
@@ -38,7 +38,7 @@ public class SerieAdapter extends RecyclerView.Adapter{
     }
 
     @Override
-    public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
+    public void onBindViewHolder(RecyclerView.ViewHolder viewHolder, int position) {
         SerieViewHolder holder_series = (SerieViewHolder) viewHolder;
 
         Serie serie = series.get(position);

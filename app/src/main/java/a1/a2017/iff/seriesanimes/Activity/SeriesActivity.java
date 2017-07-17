@@ -8,6 +8,7 @@ import android.support.v7.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.List;
 
+import a1.a2017.iff.seriesanimes.Adapter.ClickRecyclerViewListener;
 import a1.a2017.iff.seriesanimes.Adapter.SerieAdapter;
 import a1.a2017.iff.seriesanimes.Model.Serie;
 import a1.a2017.iff.seriesanimes.R;
@@ -21,7 +22,7 @@ public class SeriesActivity extends AppCompatActivity {
 
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.rv_series);
 
-        recyclerView.setAdapter(new SerieAdapter(getSeries(),this,this));
+        recyclerView.setAdapter(new SerieAdapter(getSeries(),this, (ClickRecyclerViewListener) this));
         RecyclerView.LayoutManager layout = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
 
         recyclerView.setLayoutManager(layout);
